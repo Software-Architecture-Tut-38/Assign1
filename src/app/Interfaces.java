@@ -1,10 +1,24 @@
 package app;
 
 
-interface Device {
-    void setPower(int val);
-    int getPower();
+interface SmartDevice {
+    void connectToWifi();
+
 }
+
+interface BulbPower {
+    void setPowerUsage(double usage);
+    double getPowerUsage();
+}
+
+interface LockBattery {
+    void setBatteryConsumption(double consumption);
+    double getBatteryConsumption();
+}
+
+
+
+
 
 
 
