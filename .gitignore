@@ -1,0 +1,19 @@
+#--- Java ------
+*.class
+/bin/
+*.log
+hs_err_pid*
+
+#---OS---
+.DS_Store
+Thumbs.db
+
+# ---- IntelliJ IDEA ----
+.idea/
+*.iml
+*.iws
+out/
+
+# ---- VS Code ----
+.vscode/
+.history/
