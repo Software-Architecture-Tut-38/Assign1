@@ -13,10 +13,7 @@ public class App {
         SmartLock lockA = brandA.createSmartLock();
         SmartLock lockB = brandB.createSmartLock();
 
-        bulbA.setPowerUsage(500);
-        lockB.setBatteryConsumption(125);
-
-
-
+        System.out.println("Bulb A power usage: " + bulbA.getPowerUsage());
+        System.out.println("Lock B battery consumption: " + lockB.getBatteryConsumption());
     }
 }

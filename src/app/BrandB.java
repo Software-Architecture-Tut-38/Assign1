@@ -6,11 +6,15 @@ public class BrandB extends SmartdeviceFactory {
     private final String name = "BrandB";
     @Override
     public SmartBulb createSmartBulb() {
-        return new SmartBulb(name);
+        SmartBulb bulb = new SmartBulb(name);
+        bulb.setPowerUsage(700);
+        return bulb;
     }
 
     @Override
     public SmartLock createSmartLock() {
-        return new SmartLock(name);
+        SmartLock lock = new SmartLock(name);
+        lock.setBatteryConsumption(40);
+        return lock;
     }
 }
