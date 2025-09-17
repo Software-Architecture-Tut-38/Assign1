@@ -7,14 +7,14 @@ public class BrandB extends SmartdeviceFactory {
     @Override
     public SmartBulb createSmartBulb() {
         SmartBulb bulb = new SmartBulb(name);
-        bulb.setPowerUsage(700);
+        bulb.setPowerUsage(readDoubleFromFile("brandBData.txt", 0));
         return bulb;
     }
 
     @Override
     public SmartLock createSmartLock() {
         SmartLock lock = new SmartLock(name);
-        lock.setBatteryConsumption(40);
+        lock.setBatteryConsumption(readDoubleFromFile("brandBData.txt", 1));
         return lock;
     }
 }

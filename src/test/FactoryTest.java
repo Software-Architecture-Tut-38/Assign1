@@ -8,19 +8,19 @@ public class FactoryTest {
     SmartBulb bulb;
     SmartLock lock;
 
-    BrandA factoryA = new BrandA();
-    BrandB factoryB = new BrandB();
+    SmartdeviceFactory factoryA = new BrandA();
+    SmartdeviceFactory factoryB = new BrandB();
 
     @Test
     public void testCreateBulbA(){
         bulb = factoryA.createSmartBulb();
-        assertEquals(500, bulb.getPowerUsage(), 0.1);
+        assertEquals(50, bulb.getPowerUsage(), 0.1);
     }
 
     @Test
     public void testCreateBulbB(){
         bulb = factoryB.createSmartBulb();
-        assertEquals(700, bulb.getPowerUsage(), 0.1);
+        assertEquals(80, bulb.getPowerUsage(), 0.1);
     }
 
     @Test
