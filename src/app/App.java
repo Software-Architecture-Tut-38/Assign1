@@ -7,11 +7,11 @@ public class App {
         SmartdeviceFactory brandA = new BrandA();
         SmartdeviceFactory brandB = new BrandB();
 
-        SmartBulb bulbA =  brandA.createSmartBulb();
-        SmartBulb bulbB = brandB.createSmartBulb();
+        Bulb bulbA =  brandA.createSmartBulb();
+        Bulb bulbB = brandB.createSmartBulb();
 
-        SmartLock lockA = brandA.createSmartLock();
-        SmartLock lockB = brandB.createSmartLock();
+        Lock lockA = brandA.createSmartLock();
+        Lock lockB = brandB.createSmartLock();
 
         System.out.println("Bulb A power usage: " + bulbA.getPowerUsage());
         System.out.println("Lock B battery consumption: " + lockB.getBatteryConsumption());

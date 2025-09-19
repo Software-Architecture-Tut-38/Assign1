@@ -1,6 +1,6 @@
 package app;
 
-public class SmartLock implements SmartDevice, LockBattery {
+public class SmartLock implements Lock {
     private double batteryConsumption;
     private String company;
 
@@ -9,10 +9,6 @@ public class SmartLock implements SmartDevice, LockBattery {
         System.out.println("Smart lock created by " + company);
     }
 
-    @Override
-    public void connectToWifi() {
-        System.out.println("connecting to wifi");
-    }
 
     @Override
     public void setBatteryConsumption(double consumption) {

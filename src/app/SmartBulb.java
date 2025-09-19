@@ -2,7 +2,7 @@ package app;
 
 
 
-public class SmartBulb implements BulbPower, SmartDevice{
+public class SmartBulb implements Bulb{
     private double PowerUsage;
     private String company;
 
@@ -21,10 +21,7 @@ public class SmartBulb implements BulbPower, SmartDevice{
         PowerUsage = usage;
     }
 
-    @Override
-    public void connectToWifi() {
-        System.out.println("Connecting to wifi");
-    }
+
 
     
 

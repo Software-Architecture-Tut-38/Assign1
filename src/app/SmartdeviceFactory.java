@@ -6,9 +6,9 @@ import java.io.IOException;
 
 public abstract class SmartdeviceFactory {
 
-    public abstract SmartBulb createSmartBulb();
+    public abstract Bulb createSmartBulb();
 
-    public abstract SmartLock createSmartLock();
+    public abstract Lock createSmartLock();
 
     protected double readDoubleFromFile(String fileName, int lineNumber){
         try (BufferedReader br = new BufferedReader(new FileReader("src/app/" + fileName))) {

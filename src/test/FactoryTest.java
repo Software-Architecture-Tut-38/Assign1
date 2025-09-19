@@ -1,12 +1,13 @@
 package test;
 
+
 import app.*;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class FactoryTest {
-    SmartBulb bulb;
-    SmartLock lock;
+    Bulb bulb;
+    Lock lock;
 
     SmartdeviceFactory factoryA = new BrandA();
     SmartdeviceFactory factoryB = new BrandB();
