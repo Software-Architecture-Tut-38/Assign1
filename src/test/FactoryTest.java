@@ -8,31 +8,33 @@ import static org.junit.Assert.*;
 public class FactoryTest {
     Bulb bulb;
     Lock lock;
-
-    SmartdeviceFactory factoryA = new BrandA();
-    SmartdeviceFactory factoryB = new BrandB();
+    SmartdeviceFactory factory;
 
     @Test
     public void testCreateBulbA(){
-        bulb = factoryA.createSmartBulb();
+        factory = new BrandA();
+        bulb = factory.createSmartBulb();
         assertEquals(50, bulb.getPowerUsage(), 0.1);
     }
 
     @Test
     public void testCreateBulbB(){
-        bulb = factoryB.createSmartBulb();
+        factory = new BrandB();
+        bulb = factory.createSmartBulb();
         assertEquals(80, bulb.getPowerUsage(), 0.1);
     }
 
     @Test
     public void testCreateLockA(){
-        lock = factoryA.createSmartLock();
+        factory = new BrandA();
+        lock = factory.createSmartLock();
         assertEquals(20, lock.getBatteryConsumption(), 0.1);
     }
 
     @Test
     public void testCreateLockB(){
-        lock = factoryB.createSmartLock();
+        factory = new BrandB();
+        lock = factory.createSmartLock();
         assertEquals(40, lock.getBatteryConsumption(), 0.1);
     }
 }
