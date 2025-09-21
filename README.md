@@ -12,7 +12,7 @@ Within the `src` folder, there are two more where:
 
 ## UML Diagram
 \
-<img width="632" height="715" alt="image" src="https://github.com/user-attachments/assets/53ef3e7e-5a6b-4ae3-9930-e362c26581c1" />
+<img width="594" height="672" alt="image" src="https://github.com/user-attachments/assets/bf9cd368-01e1-486f-afe2-21a1b301cc9e" />
 \
 
 Here is a UML diagram describing our system. 
@@ -25,3 +25,4 @@ We designed tests using junit. These cover all bases for creating smart bulbs an
 
 Also, App.java contains a basic program which simply creates and prints the power usage/consumption for a brand A bulb and brand B lock.
 <img width="287" height="208" alt="image" src="https://github.com/user-attachments/assets/8f333568-25b5-4fd2-8008-7ae48a5eb7c4" />
+
